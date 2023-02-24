@@ -5,14 +5,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSTCfJ9E4TdPEOR80GQKAfkTCjkZ0DC54",
-  authDomain: "restaurant-by-aman.firebaseapp.com",
-  databaseURL:
-    "https://restaurant-by-aman-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "restaurant-by-aman",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DB_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
   storageBucket: "restaurant-by-aman.appspot.com",
-  messagingSenderId: "83986054927",
-  appId: "1:83986054927:web:411b13ed94e7e7e54e887a",
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MSG_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
   measurementId: "G-0VZ0XZ10QP",
 };
 
